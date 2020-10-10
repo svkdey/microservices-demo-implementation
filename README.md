@@ -26,3 +26,16 @@ install rabbitmq
 curl -X POST localhost:8080/actuator/refresh
 curl -X POST localhost:8080/actuator/bus-refresh
 ```
+
+## Run app sequence 
+```
+java -jar <appname.jar>
+sequence :
+#1 API-discovery-server
+#2 api-zull-gateway
+#3 zipkin
+#4 ConfigServer
+#5 BillingManagemenetService
+#6 CustomerManagementSystem
+#7 MuskySystem
+```
